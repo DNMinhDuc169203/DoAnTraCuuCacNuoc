@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp" />
+            <solid android:color="@color/white" />
+            <stroke android:width="2dp" android:color="#808080" />
+        </shape>
+    </item>
+    <!-- Giữ không gian cho mũi tên mặc định -->
+    <item android:right="12dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

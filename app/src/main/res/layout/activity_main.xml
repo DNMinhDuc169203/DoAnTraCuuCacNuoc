@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/anhnenappp"
+    tools:context=".MainActivity">
+
+    <!-- Nội dung phía trên -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tra cứu thông tin các nước"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- EditText để nhập tên quốc gia -->
+        <EditText
+            android:id="@+id/edt_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên quốc gia"
+            android:inputType="text"
+            android:textColor="#000000"
+        android:textSize="16sp"
+
+        android:layout_marginBottom="20dp"
+        android:padding="12dp"
+        android:textColorHint="#00796B"
+        android:gravity="start|center_vertical"
+        android:focusableInTouchMode="true"
+        android:importantForAccessibility="yes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chọn quốc gia từ danh sách: "
+            android:textStyle="bold"
+            android:textSize="50px"
+            android:layout_marginBottom="5dp"
+            android:padding="2dp"
+            />
+
+
+        <!-- Spinner để chọn quốc gia -->
+        <Spinner
+            android:id="@+id/spinner_countries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_spinner"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"
+           android:popupBackground="@color/white"/>
+
+        <!-- Nút Load để tải dữ liệu -->
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tải Dữ Liệu"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:backgroundTint="@color/aa"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp" />
+
+        <!-- TextView để hiển thị thông tin quốc gia -->
+        <TextView
+            android:id="@+id/txt_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/txtFlagLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hình ảnh lá cờ của đất nước"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            android:layout_marginTop="8dp" />
+
+        <!-- Hình ảnh lá cờ -->
+        <ImageView
+            android:id="@+id/img_flag"
+            android:layout_width="200dp"
+            android:layout_height="113dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <!-- LinearLayout chứa hai nút ở dưới cùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- Nút bên trái -->
+        <Button
+            android:id="@+id/btnGioiThieu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:drawableLeft="@drawable/profile"
+            android:drawablePadding="8dp"
+            android:text="Giới thiệu"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:padding="12dp" />
+        <Button
+            android:id="@+id/btnHienThiDanhSach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:drawablePadding="8dp"
+            android:text="Danh sách"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:padding="12dp" />
+
+
+        <!-- Nút bên phải -->
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/out"
+            android:drawablePadding="8dp"
+            android:text="Đăng xuất"
+            android:backgroundTint="@color/white"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"
+            android:padding="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

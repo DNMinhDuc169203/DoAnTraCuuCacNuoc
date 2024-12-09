@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "81228000722",
+    "firebase_url": "https://quanliall-default-rtdb.firebaseio.com",
+    "project_id": "quanliall",
+    "storage_bucket": "quanliall.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81228000722:android:04e64a2b7a77e830086c0b",
+        "android_client_info": {
+          "package_name": "stu.edu.vn.TraCuuTTCacNuoc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5NS2WB7Y7YT6QqtN8s2QRcVrNqic4JwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
